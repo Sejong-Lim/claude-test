@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(java --version)",
+      "Bash(chmod +x:*)",
+      "Bash(npm install:*)",
+      "Bash(python3 -m venv venv)",
+      "Bash(venv/bin/pip install:*)",
+      "Bash(bash run.sh)",
+      "Bash(venv/bin/pytest tests/ -v)",
+      "Bash(node server.js)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(curl -s http://localhost:3000/hello)"
+    ]
+  }
+}
