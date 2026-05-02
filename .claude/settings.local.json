@@ -10,7 +10,21 @@
       "Bash(venv/bin/pytest tests/ -v)",
       "Bash(node server.js)",
       "Bash(curl -s http://localhost:3000/)",
-      "Bash(curl -s http://localhost:3000/hello)"
+      "Bash(curl -s http://localhost:3000/hello)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(claude doctor:*)",
+      "Read(//Users/**)",
+      "Read(//Users/Shared/**)",
+      "Bash(ls:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(pkill -f \"node server.js\")",
+      "Bash(gh --version)",
+      "Bash(brew --version)",
+      "Bash(curl -s https://api.github.com/repos/cli/cli/releases/latest)",
+      "Read(//private/tmp/**)",
+      "Bash(curl -L -o gh.zip \"https://github.com/cli/cli/releases/download/v2.92.0/gh_2.92.0_macOS_arm64.zip\")",
+      "Bash(unzip -o gh.zip -d gh_extracted)",
+      "Bash(cp gh_extracted/gh_2.92.0_macOS_arm64/bin/gh /usr/local/bin/gh)"
     ]
   }
 }
